@@ -1,0 +1,47 @@
+{
+  "name": "redauth-node",
+  "version": "1.0.0",
+  "description": "Auth NodeJS module",
+  "main": "index.js",
+  "dependencies": {
+    "@koa/cors": "^2.2.3",
+    "@types/pino": "^5.15.5",
+    "@typescript-eslint/parser": "^2.19.2",
+    "bcrypt": "^3.0.8",
+    "eslint": "^6.8.0",
+    "knex": "^0.20.10",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-compress": "^3.0.0",
+    "koa-json": "^2.0.2",
+    "koa-logger": "^3.2.1",
+    "koa-pino-logger": "^2.1.3",
+    "koa-router": "^8.0.8",
+    "koa-session": "^5.13.1",
+    "mysql2": "^2.1.0",
+    "objection": "^2.1.2",
+    "pino": "^5.16.0",
+    "pino-caller": "^3.0.1",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.22",
+    "typescript": "^3.7.5"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.1.2",
+    "@types/koa": "^2.11.1",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/node": "^13.7.1",
+    "@typescript-eslint/eslint-plugin": "^2.19.2"
+  },
+  "scripts": {
+    "lint": "eslint ./api --fix --ext .ts,.tsx ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "author": "McGrady Chen",
+  "license": "MIT"
+}
