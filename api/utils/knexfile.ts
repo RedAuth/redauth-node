@@ -8,7 +8,7 @@ const KnexConfig = {
             host : Config.instance.db.host,
             user: Config.instance.db.username,
             database: Config.instance.db.database,
-            password: Config.instance.db.password
+            password: Config.instance.dbPassword
         }
     }
 };

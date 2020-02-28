@@ -88,6 +88,10 @@ export class Config {
         return this._config.db;
     }
 
+    get dbPassword(): string {
+        return process.env.RED_AUTH_DB_PASSWORD || this.db.password;
+    }
+
     get encryptPassword(): boolean {
         return this.getValidBoolean(process.env.HITCHHIKER_ENCRYPT_PASSWORD, this._config.app.encryptPassword);
     }
