@@ -28,7 +28,7 @@
         "host": "localhost",
         "port": 33060,
         "username": "root",
-        "password": "Mac8.611",
+        "password": "********",
         "database": "red_auth"
     },
     "schedule": {
