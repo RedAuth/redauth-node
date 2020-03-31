@@ -12,12 +12,12 @@ class UserAccount extends Model {
     // is created it is checked against this schema. http://json-schema.org/.
     static jsonSchema = {
         type: 'object',
-        required: ['nickName', 'password'],
+        required: ['name', 'password'],
 
         properties: {
             accountGuid: { type: 'integer' },
             email: { type: ['string', 'null']},
-            nikcName: { type: ['string'], minLength: 6, maxLength: 64 },
+            name: { type: ['string'], minLength: 6, maxLength: 64 },
             password: { type: 'string', minLength: 1, maxLength: 64 },
             phone: { type: ['string', 'mull' ], minLength: 1, maxLength: 32 },
             createdAt: { type: 'string', format: 'date-time' },

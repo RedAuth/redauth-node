@@ -32,7 +32,7 @@ userRouter.post('/login', async(ctx: Koa.Context) => {
         removeProtectedFeild(res.result.user);
     }
     ctx.body = res;
-}).post('/create', async(ctx: Koa.Context) => {
+}).post('/signup', async(ctx: Koa.Context) => {
     Logging.info({body: ctx.request.body}, 'user create');
     const data = ctx.request.body as DtoUser;
     const res = await UserService.createUser(data);

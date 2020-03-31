@@ -12,7 +12,7 @@ export class UserService {
     static async createUser(dtoUser: DtoUser): Promise<ResObj> {
 
         const user: UserAccount = new UserAccount();
-        user.nickName = dtoUser.nickName;
+        user.name = dtoUser.name;
         user.email = dtoUser.email;
         user.phone = dtoUser.phone;
         user.password = BCrypt.hashSync(dtoUser.password, 10);
@@ -95,8 +95,8 @@ export class UserService {
         if (user.mfaToken) {
             updateBody.mfaToken = user.mfaToken;
         }
-        if (user.nickName) {
-            updateBody.nickName = user.nickName;
+        if (user.name) {
+            updateBody.name = user.name;
         }
         
         let updatedUser: UserAccount;

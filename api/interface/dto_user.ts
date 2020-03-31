@@ -1,7 +1,7 @@
 export interface DtoUser {
     accountGuid?: string;
     email?: string;
-    nickName?: string;
+    name?: string;
     password?: string;
     phone?: string;
     status?: number;

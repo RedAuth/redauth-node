@@ -20,6 +20,8 @@
     "koa-session": "^5.13.1",
     "mysql2": "^2.1.0",
     "objection": "^2.1.2",
+    "oidc-provider": "^6.23.3",
+    "openid-client": "^3.14.1",
     "pino": "^5.16.0",
     "pino-caller": "^3.0.1",
     "reflect-metadata": "^0.1.13",
