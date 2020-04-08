@@ -2,6 +2,7 @@
     "compilerOptions": {
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
+        "allowJs": true,
         "module": "commonjs",
         "target": "ES6",
         "outDir": "build",
@@ -14,6 +15,7 @@
           ]
     },
     "exclude": [
+        "build",
         "script",
         "node_modules"
     ]

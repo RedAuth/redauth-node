@@ -1,4 +1,5 @@
 module.exports = {
+    /*
     parser:  '@typescript-eslint/parser', //??ESLint????
     extends: ['plugin:@typescript-eslint/recommended'],//??????????
     plugins: ['@typescript-eslint'],//????eslint????????
@@ -6,6 +7,19 @@ module.exports = {
         browser: true,
         node: true,
     },
+    */
+    overrides: [
+        {
+            "files": ['*.js'],
+            "parser": 'babel-eslint',
+        },
+        {
+            "files": ['*.ts', '*.tsx'],
+            "extends": ["plugin:@typescript-eslint/recommended"],
+            "parser": '@typescript-eslint/parser',
+            "plugins": ['@typescript-eslint/eslint-plugin'],
+        },
+    ],
     rules: {
         'arrow-parens': [2, 'as-needed'],
         eqeqeq: 0,
@@ -17,5 +31,5 @@ module.exports = {
         'arrow-spacing': 2,
         'dot-location': [2, 'property'],
         'prefer-arrow-callback': 2
-    }                     
+    }
 }
